@@ -140,6 +140,11 @@ ActiveRecord::Schema.define(:version => 20131128102808) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "terms_conditions"
+    t.string   "profile_picture"
+    t.string   "city"
+    t.string   "phone_number"
+    t.string   "address"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
   end

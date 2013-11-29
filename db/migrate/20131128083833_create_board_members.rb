@@ -3,8 +3,12 @@ class CreateBoardMembers < ActiveRecord::Migration
     create_table :board_members do |t|
       t.string :role
       t.string :name
-      t.string :email
-      t.string :phone_number
+      t.string :address
+      t.string :city
+      t.string :state
+      t.string :zip_code
+      t.string :country
+      t.integer :organisation_id
       t.timestamps
     end
   end

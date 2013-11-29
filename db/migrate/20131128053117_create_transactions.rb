@@ -4,6 +4,9 @@ class CreateTransactions < ActiveRecord::Migration
       t.integer :amount
       t.string :receiver
       t.string :sender
+      t.integer :donor_id
+      t.integer  :organisation_id
+
       t.timestamps
     end
   end

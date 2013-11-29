@@ -21,6 +21,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string   :terms_conditions
       t.string   :profile_picture
       t.string   :city
+      t.string   :country
       t.string   :phone_number
       t.string   :address
       ## Confirmable

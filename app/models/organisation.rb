@@ -1,4 +1,4 @@
-class Organisation < ActiveRecord::Base
+class Organisation <  ActiveRecord::Base
   # attr_accessible :title, :body
   attr_accessible :non_profit_in_us,:registration_number,:non_profit_in_other_country,:listing_in_olanhatorah,:description,:primary_language
   validates_presence_of :non_profit_in_us,:registration_number,:non_profit_in_other_country,:listing_in_olanhatorah,:description,:primary_language

@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(:version => 20131129071415) do
     t.integer  "amount"
     t.string   "donor_request"
     t.string   "memo"
+    t.date     "closing_date"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
@@ -73,8 +74,10 @@ ActiveRecord::Schema.define(:version => 20131129071415) do
   end
 
   create_table "favorites", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer  "donor_id"
+    t.integer  "organisation_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "incomes", :force => true do |t|
@@ -89,6 +92,7 @@ ActiveRecord::Schema.define(:version => 20131129071415) do
     t.string   "state"
     t.string   "zip_code"
     t.date     "expiry_date"
+    t.integer  "user_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
@@ -109,6 +113,7 @@ ActiveRecord::Schema.define(:version => 20131129071415) do
 
   create_table "organisation_fundraisers", :force => true do |t|
     t.integer  "organisation_id"
+    t.integer  "user_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end
@@ -210,6 +215,7 @@ ActiveRecord::Schema.define(:version => 20131129071415) do
     t.string   "country"
     t.string   "phone_number"
     t.string   "address"
+    t.integer  "role_id"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
   end

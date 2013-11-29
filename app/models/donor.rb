@@ -15,6 +15,10 @@ class Donor < ActiveRecord::Base
    has_many :donations
    has_many :favorites
    has_many :transactions
-
+   has_many :favorites
+   has_many :organisations , :through => :favorites
+   has_many :donations
+   has_many :organisations ,:through => :donations
+ 
 
 end

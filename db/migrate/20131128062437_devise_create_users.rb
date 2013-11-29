@@ -24,6 +24,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string   :country
       t.string   :phone_number
       t.string   :address
+      t.integer   :role_id
       ## Confirmable
       # t.string   :confirmation_token
       # t.datetime :confirmed_at

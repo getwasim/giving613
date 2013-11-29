@@ -4,6 +4,7 @@ class CreateIndividualSolicitors < ActiveRecord::Migration
       t.string :state 
       t.string :zip_code
       t.date :expiry_date
+      t.integer :user_id
       t.timestamps
     end
   end

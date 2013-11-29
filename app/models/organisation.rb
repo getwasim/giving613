@@ -8,8 +8,16 @@ class Organisation <  ActiveRecord::Base
   has_one  :contact_information
   has_many :language_specific
   has_one  :access_code
+  has_many :organisations_categories
   has_many :categories , :through => :organisations_categories
   has_many :transactions
   has_many :organisation_fund_raisers
+  has_many :organisations_individual_solicitors
   has_many :individual_solicitors, :through => :organisations_individual_solicitors
+  has_many :favorites
+  has_many :donors , :through => :favorites
+  belongs_to :user
+  has_many :donations
+  has_many :donors ,:through => :donations
+
 end

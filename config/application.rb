@@ -58,5 +58,15 @@ module Giving613
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # config.action_mailer.smtp_settings = {
+    #     address: "smtp.gmail.com",
+    #     port: 587,
+    #     authentication: "plain",
+    #     user_name: "etika.ahuja@ongraph.com",
+    #     password: "etika.123",
+    #     ssl: true,
+    #     :openssl_verify_mode  => 'none'
+    #   }
   end
 end

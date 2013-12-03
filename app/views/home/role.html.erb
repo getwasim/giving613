@@ -1,0 +1,12 @@
+<div>
+<!-- 	<form  action="/home/index" method="post">
+ -->
+ <%= form_tag(new_user_registration_path , method: "get") %>
+<p> Select the role from below :</p>
+
+<%= radio_button_tag 'role', 'Donor', true%> Donor <br>
+<%= radio_button_tag 'role', 'Organization'%> Organization<br> 
+<%= submit_tag "Continue" %>
+
+</div>
+

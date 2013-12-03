@@ -4,6 +4,4 @@ class BoardMembers < ActiveRecord::Base
    belongs_to :organisation
    validates_presence_of :role,:name,:address,:city,:country
 
-
-
 end

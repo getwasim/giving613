@@ -25,6 +25,7 @@ gem 'colorbox-rails'
 gem 'devise'
 gem 'jquery-rails'
 gem 'mailcatcher'
+gem 'cancan'
 # gem 'tlsmail'
 
 # To use ActiveModel has_secure_password
